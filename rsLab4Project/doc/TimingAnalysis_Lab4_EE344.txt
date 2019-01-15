@@ -1,0 +1,28 @@
+Robert Sanborn
+Prof Morton
+EE 344
+Lab 4 Timing Analysis
+11/14/18
+
+
+
+Peak Task/Interrupt Execution Times (Measured):
+
+	ControlDisplayTask()    -> 	    513.6  ns  //>>> Not worst case -1 timing
+	KeyTask()				->		  6.2 us
+	AlarmControlTask()		->		505.4 ns
+	PIT Handler()			->		986.1  ns
+
+	
+	
+	
+Peak CPU Load dues to the tasks and interrupt handlers:
+
+	L =  ControlDisplayTask_PkSrvTime/(timeslice) + KeyTask_PkSrvTime/(timeslice) + AlarmControlTask_PkSrvTime/(timeslice) + PIT_Handler_PkSrvTime/(1/19200sps)
+	
+	L = (513.6ns)/(10ms) + (6.20us)/(10ms) + (505.4ns)/(10ms) + (986.1ns)/(52.08us)
+	
+	L =   5.136*10^(-5)   +      6.2*10^(-4)    +    5.054*10^(-5)   +      0.01893
+	
+	L =   0.0197
+	

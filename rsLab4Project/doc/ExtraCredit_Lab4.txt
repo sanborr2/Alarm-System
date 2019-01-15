@@ -1,0 +1,11 @@
+Robert Sanborn
+Prof Morton
+EE 344
+Lab 4 Timing Analysis
+11/19/18
+
+
+For extra credit, alarm voltage wave was fed into amplifying circuit hooked to a speaker. 
+The speaker emitted an alarm noise when the micro-controller went into alarm on state,
+and was silent when the micro-controller was in alarm off state.
+//>>> +2 ex
